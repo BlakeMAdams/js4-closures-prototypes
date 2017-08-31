@@ -74,15 +74,20 @@ function outer() {
   properly. */
   
   //Code Here
-  
+  function makeCounter() {
+    var val = 0;
+    return function(){
+      return ++val;
+    }
+  }
   //Uncomment this once you make your function
-  //   var count = makeCounter();
-  //   count(); // 1
-  //   count(); // 2
-  //   count(); // 3
-  //   count(); // 4
+    var count = makeCounter();
+    count(); // 1
+    count(); // 2
+    count(); // 3
+    count(); // 4
   
-  
+
   
   
   
