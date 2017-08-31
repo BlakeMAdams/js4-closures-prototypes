@@ -3,7 +3,11 @@
 // ======================
 
 // Create a constructor function called CarFactory that will build car objects with make and model properties. 
+var CarFactory = function(make, model){
+  this.make = make;
+  this.model = model;
 
+}
 // The values for the make and model will come from two parameters, make and model (in that order). 
 
 // Code here
